@@ -14,3 +14,12 @@ t.WebClient).DownloadFile <<<< ('https://github.com/Velocidex/WinPmem/release/do
 ers\win7\WinPMEM.exe')
      : NotSpecified: (:) [], MethodInvocationException
 orId : DotNetMethodException
+
+PS C:\Windows\system32> [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tl
+Exception setting "SecurityProtocol": "Cannot convert null to type "System.Net.SecurityProtocolType"
+meration values. Specify one of the following enumeration values and try again. The possible enumera
+l3, Tls"."
+At line:1 char:28
++ [Net.ServicePointManager]:: <<<< SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
