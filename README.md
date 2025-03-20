@@ -23,3 +23,9 @@ At line:1 char:28
 + [Net.ServicePointManager]:: <<<< SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
     + FullyQualifiedErrorId : PropertyAssignmentException
+
+certutil -urlcache -f "https://github.com/Velocidex/WinPmem/releases/download/v4.1.dev1/winpmem64.exe" "C:\Users\win7\WinPMEM.exe"
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319
+
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
